@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque"> <!-- android:opacity="opaque" should be here -->
+    <item>
+        <!--this is your background, you can use color, gradient etc.-->
+        <!--color android:color="@color/startColor"/-->
+        <shape>
+              <gradient
+                   android:angle="45"
+                   android:endColor="@color/startColor"
+                   android:startColor="@color/endColor"
+                   android:type="linear"/>
+        </shape>
+    </item>
+
+</layer-list>

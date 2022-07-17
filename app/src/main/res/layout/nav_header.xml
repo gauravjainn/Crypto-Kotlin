@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue">
+<!--    android:layout_marginTop="8dp"-->
+<!--    android:layout_marginStart="8dp"-->
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_person_24"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="user name"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/user_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="user login"
+        android:textColor="@color/white"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/under_line"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

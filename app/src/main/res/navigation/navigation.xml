@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation2"
+    app:startDestination="@id/firstView">
+    <fragment
+        android:id="@+id/firstView"
+        android:name="com.siltech.cryptochat.chat.sheet.BottomFragment"
+        android:label="first_view"
+        tools:layout="@layout/first_view">
+
+    </fragment>
+
+</navigation>

@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">Crypto Chat</string>
+    <string name="app_version">1.1</string>
+    <string name="user_status">status</string>
+    <string name="Account">Account</string>
+    <string name="user_login_profile">User number</string>
+    <string name="user_name_profile">Name of user</string>
+    <string name="tap_to_change_name">Tap to add your name</string>
+    <string name="notification">Notification</string>
+    <string name="pin">Change PIN</string>
+    <string name="language">Language</string>
+    <string name="Setting">Setting</string>
+    <string name="Help">Help</string>
+    <string name="contact_name">Name</string>
+    <string name="contact">Contacts</string>
+    <string name="message">message</string>
+    <string name="back">Back</string>
+    <string name="contacts">Contacts</string>
+    <string name="next">Contacts</string>
+    <string name="choose_user">Select users</string>
+    <string name="new_group">New Group</string>
+    <string name="create">Create</string>
+    <string name="group_name">Group Name</string>
+    <string name="name_hint">Enter the code number</string>
+    <string name="call_button">Call</string>
+    <string name="user_name">User Name</string>
+    <string name="calling">Calling</string>
+    <string name="cancel">Cancellation</string>
+    <string name="save">Save</string>
+    <string name="change_pin">PIN</string>
+    <string name="voice_message">A voice message</string>
+    <string name="File">File</string>
+    <string name="support">Support</string>
+    <string name="hello_blank_fragment">A voice message</string>
+    <string name="reset_pin">Change PIN</string>
+    <string name="set_pin_code">Installing Pinkoda</string>
+    <string name="welcome_to_messenger">Welcome to the messenger!</string>
+
+
+    <!-- Buttons -->
+    <string name="add">Add</string>
+    <string name="log_in">To come in</string>
+    <string name="save_settings">Save</string>
+    <string name="wipe_data">Delete data</string>
+    <string name="to_come_in">To come in</string>
+
+    <!-- Main -->
+
+    <string name="no_name_error">Please input a sip login of person whom need to call</string>
+
+
+    <!-- Call -->
+    <string name="call_title">Call</string>
+    <string name="call_answer">Answer</string>
+    <string name="call_decline">Decline</string>
+    <string name="call_end">End</string>
+
+    <string name="key_2" translatable="false">A B C</string>
+    <string name="key_3" translatable="false">D E F</string>
+    <string name="key_4" translatable="false">G H I</string>
+    <string name="key_5" translatable="false">J K L</string>
+    <string name="key_6" translatable="false">M N O</string>
+    <string name="key_7" translatable="false">P Q R S</string>
+    <string name="key_8" translatable="false">T U V</string>
+    <string name="key_9" translatable="false">W X Y Z</string>
+
+
+    <string name="admin_current_password">Enter your current PIN</string>
+    <string name="admin_new_password">Set a new PIN to protect your funds.</string>
+    <string name="admin_new_password2">Set a PIN to protect your funds.</string>
+    <string name="admin_repeat_password">Repeat PIN</string>
+    <string name="admin_error_set_password">Error, please try again</string>
+    <string name="admin_current_password_incorrect">The current PIN is incorrect</string>
+    <string name="admin_new_password_not_match">PIN codes do not match</string>
+    <string name="admin_change_password">Change PIN</string>
+    <string name="admin_enter_you_access_code">Enter your PIN</string>
+    <string name="invalid_pin_try_again">Invalid PIN. Try again.</string>
+
+    <string name="admin_enter_you_access_code_with_touch_id">Enter your PIN or hold your finger on the sensor to
+         login to the application
+    </string>
+
+    <!-- Sip -->
+    <string name="sip_registration_started">Registration…</string>
+    <string name="sip_registration_finished">Registration was successful.\nYour name is %s.</string>
+    <string name="sip_registration_error">Registration failed with error #%d</string>
+    <string name="sip_call_error">Error was occurred while calling</string>
+    <string name="no_internet_connection">No internet connection ...</string>
+    <string name="you_can_not_login_with_this_username">You cannot log in with this username</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="notification_channel_id">crytochat_noti</string>
+
+</resources>

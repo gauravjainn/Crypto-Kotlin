@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chat.NewCallActivity">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hardwareAccelerated="false"
+        />
+
+    <ProgressBar
+        android:id="@+id/loadingAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bg_blur"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/connectingImage"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="120dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/round_cirle" />
+
+        <TextView
+            android:id="@+id/callingUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"
+            android:textColor="@color/white_400"
+            android:textSize="145dp"
+            app:layout_constraintStart_toStartOf="@id/connectingImage"
+            app:layout_constraintEnd_toEndOf="@id/connectingImage"
+            app:layout_constraintTop_toTopOf="@id/connectingImage"
+            app:layout_constraintBottom_toBottomOf="@id/connectingImage"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/endCall"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/btn_endcall_normal" />
+
+    <ImageView
+        android:id="@+id/micBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/endCall"
+        app:layout_constraintEnd_toStartOf="@+id/endCall"
+        app:srcCompat="@drawable/btn_unmute_normal" />
+
+    <ImageView
+        android:id="@+id/speakerBtn"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:padding="5dp"
+        android:layout_marginStart="16dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/endCall"
+        app:layout_constraintStart_toEndOf="@+id/endCall"
+        app:layout_constraintTop_toTopOf="@+id/endCall"
+        app:srcCompat="@drawable/btn_loudspeaker_mute" />
+
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/callControls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        android:visibility="gone"
+        app:constraint_referenced_ids="endCall,micBtn,speakerBtn" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

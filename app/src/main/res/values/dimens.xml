@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_gap">16dp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
+
+    <!-- Call -->
+    <dimen name="call_name_marginTop">64dp</dimen>
+    <dimen name="call_buttons_height">64dp</dimen>
+
+    <dimen name="large_elevation">6dp</dimen>
+    <dimen name="other_elevation">4dp</dimen>
+    <dimen name="other_radius">4dp</dimen>
+
+    <dimen name="keyboard_elevation">1dp</dimen>
+    <dimen name="keyboard_radius">4dp</dimen>
+
+    <dimen name="search_text">15dp</dimen>
+    <dimen name="calendar_widget_day_text_size">15sp</dimen>
+
+    <dimen name="dashboard_header_margin">30dp</dimen>
+
+    <dimen name="main_page_manager_cards_icon">25dp</dimen>
+
+    <dimen name="manage_cards_order_dialog_horizontal_space">25dp</dimen>
+</resources>

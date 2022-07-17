@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            >
+        <com.google.android.material.appbar.AppBarLayout
+            android:visibility="gone"
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+            <org.webrtc.SurfaceViewRenderer
+                android:id="@+id/surface_view2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="105dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/appBar"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <org.webrtc.SurfaceViewRenderer
+                android:id="@+id/surface_view"
+                android:layout_width="110dp"
+                android:layout_height="160dp"
+                android:layout_margin="20dp"
+                android:elevation="5dp"
+                app:layout_constraintBottom_toTopOf="@id/callActionsBg"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/callActionsBg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:elevation="20dp"
+                android:background="@drawable/call_actions_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Chronometer
+                    android:id="@+id/callDuration"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/white"
+                    android:layout_marginVertical="10dp"
+                    app:layout_constraintBottom_toTopOf="@id/endCall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+
+
+                <ImageView
+                    android:id="@+id/muteMic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/mute_mic"
+                    android:layout_marginHorizontal="15dp"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintEnd_toStartOf="@+id/startCall"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/endCall"
+                    app:layout_constraintBottom_toBottomOf="@id/endCall"
+                    />
+
+                <ImageView
+                    android:id="@+id/startCall"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/accept_call"
+                    app:layout_constraintEnd_toStartOf="@id/endCall"
+                    app:layout_constraintStart_toEndOf="@+id/muteMic"
+                    app:layout_constraintTop_toBottomOf="@id/callDuration"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <ImageView
+                    android:id="@+id/endCall"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_cancel_call_red_bg"
+                    app:layout_constraintEnd_toStartOf="@id/loudSpeaker"
+                    app:layout_constraintStart_toEndOf="@+id/startCall"
+                    app:layout_constraintTop_toBottomOf="@id/callDuration"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+                <ImageView
+                    android:id="@+id/loudSpeaker"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:src="@drawable/speaker_on"
+                    app:layout_constraintStart_toEndOf="@id/endCall"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/endCall"
+                    app:layout_constraintBottom_toBottomOf="@id/endCall"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="16dp"
+                    android:text="From camera"
+                    android:textColor="#fff" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="16dp"
+                    android:text="From PeerConection"
+                    android:textColor="#fff" />
+            </FrameLayout>
+        </LinearLayout>-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

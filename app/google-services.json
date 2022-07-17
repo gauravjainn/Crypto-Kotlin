@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "907162052146",
+    "project_id": "cryptochat-82714",
+    "storage_bucket": "cryptochat-82714.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907162052146:android:a6bb43cdd2f6ee5e36be2b",
+        "android_client_info": {
+          "package_name": "com.siltech.cryptochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907162052146-djre554ufu8ilcv9pea2ib6lhcv456d9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.siltech.cryptochat",
+            "certificate_hash": "ac95b2faf417119638d06582334db397504b47d3"
+          }
+        },
+        {
+          "client_id": "907162052146-j5j1mm8l8g6b4ubau5lpifpr77vajq4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATqTwgm648hmJnX_CxGvR6QK-8PGAAHNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907162052146-j5j1mm8l8g6b4ubau5lpifpr77vajq4g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

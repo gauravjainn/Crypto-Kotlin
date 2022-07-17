@@ -1,0 +1,23 @@
+/**********************************************************/
+
+    -> User connect's to webSocket when the app starts with their UserId.
+
+    -> For eg-> We have two user's User_A and User_B.
+
+    -> Now User_A call's User_B.
+
+    -> On call button from chat it redirect to Calling Screen (WebRtcCallActivity) and in calling screen it call Api GetPeer
+    in which both Caller UserId and Receiver UserId passed and we get both user's socketId.
+
+    -> And also establish the PeerConnection with the required stun/turn server URL's where you find in WebRtcCallActivity file createPeerConnection() function.
+
+    /** we have socket Emit and Listener ->  "callUser" **/
+
+    -> User_A call to User_B with required data like ConnId (SDP) , UserId, Socket Id, and other calling status and emit "call_user" socket.
+
+    -> User_B get/listens the realTime data through socket which User_A sent and connects with required data and User_B also emit socket with required data
+    like call status and all to User_A.
+
+    -> And Call get connected.
+
+    -> If User_A/User_B disconnects they emit the socket with required data of call status and call get's disconnected and stream's get removed at both sides.
